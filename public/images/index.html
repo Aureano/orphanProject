@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="icon" href="Favicon/favicon.ico" type="image/png"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+
+    <div class="loader-content">
+
+        <div class="loader-icon">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+
+        <!-- <h1>Chargement en cours...</h1> -->
+
+        <!-- <p class="loader-subtitle">Merci pour votre patience</p> -->
+
+        <span id="progress-text">0%</span>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <p class="loader-message">
+            Veuillez patienter pendant que nous préparons votre
+            <span>expérience</span>
+        </p>
+
+    </div>
+
+</div>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="container navbar">
+
+            <a href="#accueil" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                Espoir d'Enfance
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#accueil">Accueil</a>
+                <a href="#missions">Nos missions</a>
+                <a href="#don">Faire un don</a>
+                <a href="#temoignages">Témoignages</a>
+            </nav>
+
+
+            <a href="#don" class="btn btn-primary nav-donate">
+                <i class="fa-solid fa-heart"></i>
+                Faire un don
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <a href="#accueil" class="btnbas " id="">
+
+    <i class="fa-solid fa-heart"></i>
+
+    </a>
+
+
+
+
+    <!-- ================= HERO / ACCUEIL ================= -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <i class="fa-solid fa-heart"></i>
+                    Chaque enfant mérite un avenir
+                </div>
+
+                <h1>
+                    Ensemble, offrons-leur
+                    <span id="tie"></span>
+                </h1>
+
+                <p>
+                    Votre générosité permet d'offrir aux enfants un environnement
+                    sûr, des repas, une éducation et l'espoir de construire un
+                    avenir rempli de possibilités.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#don" class="btn btn-primary">
+                        <i class="fa-solid fa-heart"></i>
+                        Faire un don maintenant
+                    </a>
+
+                    <a href="#missions" class="btn btn-outline">
+                        Découvrir nos actions
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+    <div class="stats-wrapper">
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <h3 id="ea"></h3>
+                    <p>Enfants accompagnés</p>
+                </div>
+
+                <div class="stat">
+                    <h3 id="rd"></h3>
+                    <p>Repas distribués</p>
+                </div>
+
+                <div class="stat">
+                    <h3 id="de">850+</h3>
+                    <p>Donateurs engagés</p>
+                </div>
+
+                <div class="stat">
+                    <h3 id="ad">15</h3>
+                    <p>Années d'engagement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="apropos">
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=85"
+                    alt="Enfants souriants">
+
+                <div class="experience-card">
+                    <h3>15 ans</h3>
+                    <p>au service des enfants</p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="section-tag">
+                    <i class="fa-solid fa-heart"></i>
+                    Notre engagement
+                </span>
+
+                <h2>Parce qu'aucun enfant ne devrait grandir sans espoir.</h2>
+
+                <p>
+                    Espoir d'Enfance œuvre chaque jour pour améliorer les
+                    conditions de vie des enfants sans soutien familial et leur
+                    donner les mêmes chances de réussir que tous les autres.
+                </p>
+
+                <ul class="about-list">
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Un environnement sûr et bienveillant
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Une alimentation saine et équilibrée
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Un accès durable à l'éducation
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Un accompagnement vers l'autonomie
+                    </li>
+                </ul>
+
+                <a href="#missions" class="btn btn-primary">
+                    Découvrir nos missions
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= MISSIONS ================= -->
+    <section class="section section-light" id="missions">
+        <div class="container">
+
+            <div class="section-heading center">
+                <span class="section-tag">
+                    <i class="fa-solid fa-bullseye"></i>
+                    Nos missions
+                </span>
+
+                <h2>Votre don agit concrètement dans leur quotidien</h2>
+
+                <p>
+                    Chaque contribution participe directement à créer de meilleures
+                    conditions de vie et de nouvelles opportunités pour les enfants.
+                </p>
+            </div>
+
+            <div class="mission-grid">
+
+                <article class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <h3>Éducation</h3>
+
+                    <p>
+                        Nous accompagnons les enfants dans leur parcours scolaire
+                        en facilitant l'accès aux fournitures, aux cours et à la formation.
+                    </p>
+                </article>
+
+
+                <article class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <h3>Alimentation</h3>
+
+                    <p>
+                        Nous contribuons à assurer chaque jour des repas nutritifs
+                        et adaptés aux besoins des enfants.
+                    </p>
+                </article>
+
+
+                <article class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+
+                    <h3>Santé</h3>
+
+                    <p>
+                        Nous facilitons l'accès aux soins médicaux, à la prévention
+                        et au suivi de la santé des enfants.
+                    </p>
+                </article>
+
+
+                <article class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <h3>Hébergement</h3>
+
+                    <p>
+                        Nous participons à offrir un cadre de vie sécurisé,
+                        confortable et adapté à leur épanouissement.
+                    </p>
+                </article>
+
+
+                <article class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+
+                    <h3>Autonomie</h3>
+
+                    <p>
+                        Nous préparons progressivement les jeunes à construire
+                        leur avenir et à devenir autonomes.
+                    </p>
+                </article>
+
+
+                <article class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+
+                    <h3>Protection</h3>
+
+                    <p>
+                        Nous soutenons un environnement bienveillant où chaque
+                        enfant peut grandir dans la dignité et la sécurité.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= DON ================= -->
+    <section class="section" id="don">
+        <div class="container">
+
+            <div class="donation-box">
+
+                <div class="donation-info">
+                    <span class="section-tag">
+                        <i class="fa-solid fa-heart"></i>
+                        Faire la différence
+                    </span>
+
+                    <h2>Un petit geste peut changer toute une vie.</h2>
+
+                    <p>
+                        Choisissez le montant que vous souhaitez offrir.
+                        Chaque contribution, quelle que soit sa valeur,
+                        représente une aide précieuse.
+                    </p>
+
+                    <ul class="donation-benefits">
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Une contribution pour le bien-être des enfants
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Soutien aux programmes éducatifs
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Participation aux besoins essentiels
+                        </li>
+                    </ul>
+                </div>
+
+
+                <form class="donation-form" id="donationForm">
+
+                    <h3>Choisissez votre don ❤️</h3>
+
+                    <div class="amounts">
+                        <button type="button" class="amount-btn" data-amount="5000">
+                            5 000 FCFA
+                        </button>
+
+                        <button type="button" class="amount-btn active" data-amount="10000">
+                            10 000 FCFA
+                        </button>
+
+                        <button type="button" class="amount-btn" data-amount="25000">
+                            25 000 FCFA
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Autre montant (FCFA)</label>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="Entrez votre montant"
+                            min="100">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frequency">Fréquence du don</label>
+
+                        <select id="frequency">
+                            <option>Don unique</option>
+                            <option>Chaque mois</option>
+                            <option>Chaque année</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary donate-submit">
+                        <i class="fa-solid fa-heart"></i>
+                        Continuer mon don
+                    </button>
+
+                    <span class="secure-text">
+                        <i class="fa-solid fa-lock"></i>
+                        Paiement sécurisé
+                    </span>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section section-light">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">
+                    <i class="fa-solid fa-camera"></i>
+                    Nos actions
+                </span>
+
+                <h2>Des sourires qui donnent un sens à notre engagement</h2>
+
+                <p>
+                    Découvrez quelques moments de partage, d'apprentissage et
+                    d'espoir vécus avec les enfants.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item large">
+                    <img
+                        src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=85"
+                        alt="Enfants heureux">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=800&q=85"
+                        alt="Enfants apprenant">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=85"
+                        alt="Moment de partage">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=85"
+                        alt="Enfant souriant">
+                </div>
+
+                <div class="gallery-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=800&q=85"
+                        alt="Activité avec les enfants">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section" id="temoignages">
+        <div class="container">
+
+            <div class="section-heading center">
+                <span class="section-tag">
+                    <i class="fa-solid fa-comments"></i>
+                    Témoignages
+                </span>
+
+                <h2>Ils soutiennent notre mission</h2>
+
+                <p>
+                    Découvrez ce que nos donateurs et partenaires disent de leur engagement.
+                </p>
+            </div>
+
+            <div class="testimonials">
+
+                <article class="testimonial">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                    <p>
+                        « Donner à Espoir d'Enfance, c'est savoir que ma contribution
+                        participe réellement à offrir de meilleures opportunités aux enfants. »
+                    </p>
+
+                    <div class="person">
+                        <img
+                            src="https://randomuser.me/api/portraits/women/44.jpg"
+                            alt="Marie K.">
+
+                        <div>
+                            <h4>Marie K.</h4>
+                            <span class="coloré">Donatrice</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="testimonial">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                    <p>
+                        « Ce qui me touche le plus, c'est de voir les enfants évoluer,
+                        apprendre et croire progressivement en leur propre avenir. »
+                    </p>
+
+                    <div class="person">
+                        <img
+                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            alt="Jean D.">
+
+                        <div>
+                            <h4>Jean D.</h4>
+                            <span class="coloré">Partenaire</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="testimonial">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                    <p>
+                        « Chaque geste compte. J'ai choisi de faire un don mensuel
+                        parce que je veux participer durablement à cette belle mission. »
+                    </p>
+
+                    <div class="person">
+                        <img
+                            src="https://randomuser.me/api/portraits/women/65.jpg"
+                            alt="Sophie A.">
+
+                        <div>
+                            <h4>Sophie A.</h4>
+                            <span class="coloré">Donatrice régulière</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+
+                <h2>Ensemble, nous pouvons changer leur histoire.</h2>
+
+                <p>
+                    Faites aujourd'hui un geste qui peut contribuer à construire
+                    un avenir meilleur pour un enfant.
+                </p>
+
+                <a href="#don" class="btn">
+                    <i class="fa-solid fa-heart"></i>
+                    Je fais un don maintenant
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="#accueil" class="logo">
+                        <span class="logo-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                        Espoir d'Enfance
+                    </a>
+
+                    <p>
+                        Ensemble, nous contribuons à offrir aux enfants
+                        un environnement plus sûr et davantage de possibilités
+                        pour construire leur avenir.
+                    </p>
+
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+
+                    <div class="footer-links">
+                        <a href="#accueil">Accueil</a>
+                        <a href="#apropos">À propos</a>
+                        <a href="#missions">Nos missions</a>
+                        <a href="#don">Faire un don</a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h4 class="footer-title">Notre action</h4>
+
+                    <div class="footer-links">
+                        <a href="#missions">Éducation</a>
+                        <a href="#missions">Alimentation</a>
+                        <a href="#missions">Santé</a>
+                        <a href="#missions">Protection</a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+
+                    <div class="footer-links">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Abomey-Calavi, Bénin
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                            +229 XX XX XX XX
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-envelope"></i>
+                            contact@espoirenfance.org
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Espoir d'Enfance — Tous droits réservés.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+    <script src="counter.js"></script>
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        /* ===== MENU MOBILE ===== */
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+
+            const icon = menuBtn.querySelector("i");
+
+            if (navLinks.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        });
+
+
+        /* Fermer le menu après un clic */
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+
+                const icon = menuBtn.querySelector("i");
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            });
+        });
+
+        const navItems = document.querySelectorAll(".nav-links a");
+
+        navItems.forEach(item => {
+
+            item.addEventListener('click', function(){
+
+                navItems.forEach(link =>{
+                            
+                    link.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+            })
+
+        });
+
+
+
+        /* ===== BOUTONS DE MONTANT ===== */
+        const amountButtons = document.querySelectorAll(".amount-btn");
+        const amountInput = document.getElementById("amount");
+
+        amountButtons.forEach(button => {
+            button.addEventListener("click", () => {
+
+                amountButtons.forEach(btn =>
+                    btn.classList.remove("active")
+                );
+
+                button.classList.add("active");
+
+                amountInput.value = button.dataset.amount;
+            });
+        });
+
+
+        /* Si montant personnalisé */
+        amountInput.addEventListener("input", () => {
+
+            if (amountInput.value !== "") {
+                amountButtons.forEach(btn =>
+                    btn.classList.remove("active")
+                );
+            }
+        });
+
+
+        /* ===== FORMULAIRE DE DON ===== */
+        const donationForm = document.getElementById("donationForm");
+
+        donationForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let amount = amountInput.value;
+
+            if (!amount) {
+
+                const activeButton =
+                    document.querySelector(".amount-btn.active");
+
+                amount = activeButton ?
+                    activeButton.dataset.amount :
+                    0;
+            }
+
+            if (amount <= 0) {
+                alert("Veuillez sélectionner ou saisir un montant valide.");
+                return;
+            }
+
+            alert(
+                "Merci pour votre générosité ❤️\n\n" +
+                "Montant du don : " +
+                Number(amount).toLocaleString("fr-FR") +
+                " FCFA\n\n" +
+                "Vous allez être redirigé vers la page de paiement."
+            );
+
+            /*
+                Ici, tu pourras plus tard intégrer une véritable solution
+                de paiement : FedaPay, Kkiapay, Stripe, PayDunya, etc.
+            */
+        });
+
+
+        const preloader = document.getElementById('preloader');
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+
+        let progress = 0;
+
+        // Animation de progression
+
+        const loadingInterval = setInterval(() => {
+
+
+            if(progress < 90 ){
+                progress += Math.floor(Math.random()*5) + 1;
+
+                if(progress > 90)
+                {
+                    progress = 90;
+                }
+
+                progressBar.style.width = progress + "%";
+                progressText.textContent = progress + "%"; 
+            
+            }
+
+        }, 1000);
+
+
+        // Lorsque toute la page est réellement chargée
+
+        window.addEventListener('load', () =>{
+
+            clearInterval(loadingInterval);
+
+        // Termine la barre à 100
+            progress = 100;
+
+            progressBar.style.width = progress + "%";
+            progressText.textContent = progress + "%";
+
+        // Petit délai pour permettre à l'utilisateur de voir 100%
+            
+            setTimeout(() =>{
+
+                preloader.classList.add('hide');
+
+            }, 1);
+
+
+        
+        // Supprime complètement le preloader après son animation (optional)
+
+
+            // setTimeout(() =>{
+
+            //     preloader.remove();
+
+            // }, 1500);
+
+
+
+        });
+
+
+
+    </script>
+
+    
+
+    <script src="typeIt.js"></script>
+
+</body>
+</html>

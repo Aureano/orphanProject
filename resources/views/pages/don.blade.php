@@ -8,7 +8,7 @@
        PAGE
     ========================================================= */
 
-    .don-page {
+    .donation-page {
         min-height: 100vh;
         background: #f8f9f7;
         padding-top: 105px;

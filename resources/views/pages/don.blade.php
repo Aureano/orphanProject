@@ -110,7 +110,6 @@
     .don-container {
         width: 90%;
         max-width: 1100px;
-
         margin: 60px auto 0;
     }
 
@@ -770,7 +769,7 @@
        PAGE
     ================================ */
 
-    .don-page {
+    .donation-page {
         padding-top: 95px;
         padding-bottom: 50px;
     }

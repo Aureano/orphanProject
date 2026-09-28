@@ -1034,7 +1034,7 @@
          CONTENU
     ====================================================== --}}
 
-    <main class="don-container">
+    <div class="don-container">
 
 
         {{-- INTRODUCTION --}}
@@ -1688,7 +1688,7 @@
         </div>
 
 
-    </main>
+    </div>
 
 </div>
 

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'OrphanName' => 'Hope for Childhood',
 
     // Navbar
     'home' => 'Home',

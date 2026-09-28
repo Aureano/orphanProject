@@ -434,7 +434,7 @@
                 </div>
 
 
-                <form class="donation-form" id="donationForm">
+                {{-- <form class="donation-form" id="donationForm">
 
                     <h3>Choisissez votre don ❤️</h3>
 
@@ -482,7 +482,69 @@
                         Paiement sécurisé
                     </span>
 
-                </form>
+                </form> --}}
+
+        <form class="donation-form payment-methods-form" id="donationForm">
+
+                <h3>Modes de paiement</h3>
+
+                <div class="payment-methods">
+
+                    <!-- PayPal -->
+                    <div class="payment-method">
+                        <div class="payment-logo paypal-logo">
+                            <i class="fa-brands fa-paypal"></i>
+                        </div>
+
+                        <div class="payment-info">
+                            <strong>Paiement PayPal</strong>
+                            <span>Paiement en ligne</span>
+                        </div>
+                    </div>
+
+
+                    <!-- OXXO -->
+                    <div class="payment-method">
+                        <div class="payment-logo oxxo-logo">
+                            OXXO
+                        </div>
+
+                        <div class="payment-info">
+                            <strong>Paiement OXXO</strong>
+                            <span>Paiement via OXXO</span>
+                        </div>
+                    </div>
+
+
+                    <!-- BBVA -->
+                    <div class="payment-method">
+                        <div class="payment-logo bbva-logo">
+                            BBVA
+                        </div>
+
+                        <div class="payment-info">
+                            <strong>Virement bancaire</strong>
+                            <span>Compte bancaire BBVA Mexico</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Bouton -->
+                <a href="{{ route('don') }}" class="btn btn-primary donate-submit">
+                    <i class="fa-solid fa-heart"></i>
+                    Continuer mon don
+                </a>
+
+
+                <!-- Sécurité -->
+                <span class="secure-text">
+                    <i class="fa-solid fa-lock"></i>
+                    Paiement sécurisé
+                </span>
+
+            </form>
 
             </div>
         </div>
@@ -861,73 +923,72 @@
         });
 
 
+        // ===== BOUTONS DE MONTANT =====
+        // const amountButtons = document.querySelectorAll(".amount-btn");
+        // const amountInput = document.getElementById("amount");
 
-        /* ===== BOUTONS DE MONTANT ===== */
-        const amountButtons = document.querySelectorAll(".amount-btn");
-        const amountInput = document.getElementById("amount");
+        // amountButtons.forEach(button => {
+        //     button.addEventListener("click", () => {
 
-        amountButtons.forEach(button => {
-            button.addEventListener("click", () => {
+        //         amountButtons.forEach(btn =>
+        //             btn.classList.remove("active")
+        //         );
 
-                amountButtons.forEach(btn =>
-                    btn.classList.remove("active")
-                );
+        //         button.classList.add("active");
 
-                button.classList.add("active");
-
-                amountInput.value = button.dataset.amount;
-            });
-        });
-
-
-        /* Si montant personnalisé */
-        amountInput.addEventListener("input", () => {
-
-            if (amountInput.value !== "") {
-                amountButtons.forEach(btn =>
-                    btn.classList.remove("active")
-                );
-            }
-        });
+        //         amountInput.value = button.dataset.amount;
+        //     });
+        // });
 
 
-        /* ===== FORMULAIRE DE DON ===== */
-        const donationForm = document.getElementById("donationForm");
+        // Si montant personnalisé
+        // amountInput.addEventListener("input", () => {
 
-        donationForm.addEventListener("submit", function(event) {
+        //     if (amountInput.value !== "") {
+        //         amountButtons.forEach(btn =>
+        //             btn.classList.remove("active")
+        //         );
+        //     }
+        // });
 
-            event.preventDefault();
 
-            let amount = amountInput.value;
+        // ===== FORMULAIRE DE DON =====
+        // const donationForm = document.getElementById("donationForm");
 
-            if (!amount) {
+        // donationForm.addEventListener("submit", function(event) {
 
-                const activeButton =
-                    document.querySelector(".amount-btn.active");
+        //     event.preventDefault();
 
-                amount = activeButton ?
-                    activeButton.dataset.amount :
-                    0;
-            }
+        //     let amount = amountInput.value;
 
-            if (amount <= 0) {
-                alert("Veuillez sélectionner ou saisir un montant valide.");
-                return;
-            }
+        //     if (!amount) {
 
-            alert(
-                "Merci pour votre générosité ❤️\n\n" +
-                "Montant du don : " +
-                Number(amount).toLocaleString("fr-FR") +
-                " FCFA\n\n" +
-                "Vous allez être redirigé vers la page de paiement."
-            );
+        //         const activeButton =
+        //             document.querySelector(".amount-btn.active");
 
-            /*
-                Ici, tu pourras plus tard intégrer une véritable solution
-                de paiement : FedaPay, Kkiapay, Stripe, PayDunya, etc.
-            */
-        });
+        //         amount = activeButton ?
+        //             activeButton.dataset.amount :
+        //             0;
+        //     }
+
+        //     if (amount <= 0) {
+        //         alert("Veuillez sélectionner ou saisir un montant valide.");
+        //         return;
+        //     }
+
+        //     alert(
+        //         "Merci pour votre générosité ❤️\n\n" +
+        //         "Montant du don : " +
+        //         Number(amount).toLocaleString("fr-FR") +
+        //         " FCFA\n\n" +
+        //         "Vous allez être redirigé vers la page de paiement."
+        //     );
+
+        //     /*
+        //         Ici, tu pourras plus tard intégrer une véritable solution
+        //         de paiement : FedaPay, Kkiapay, Stripe, PayDunya, etc.
+        //     */
+        // });
 
 
         const preloader = document.getElementById('preloader');

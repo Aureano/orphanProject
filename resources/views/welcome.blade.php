@@ -44,7 +44,7 @@
                 <span class="logo-icon">
                     <i class="fa-solid fa-heart"></i>
                 </span>
-                Espoir d'Enfance
+                {{ __('messages.OrphanName') }}
             </a>
 
             <nav class="nav-links" id="navLinks">
@@ -161,11 +161,11 @@
     </header>
 
 
-    <a href="#accueil" class="btnbas " id="">
+    {{-- <a href="#accueil" class="btnbas " id="">
 
     <i class="fa-solid fa-heart"></i>
 
-    </a>
+    </a> --}}
 
 
 

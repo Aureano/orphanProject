@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'OrphanName' => 'Espoir d\'enfance',
 
     // Navbar
     'home' => 'Accueil',

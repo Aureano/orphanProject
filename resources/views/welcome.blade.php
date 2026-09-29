@@ -770,17 +770,17 @@
                     <div class="footer-links">
                         <span>
                             <i class="fa-solid fa-location-dot"></i>
-                            {{ __(messages.footer-location) }}
+                            {{ __('messages.footer-location') }}
                         </span>
 
                         <span>
                             <i class="fa-solid fa-phone"></i>
-                            {{ __(messages.footer-contact) }}
+                            {{ __('messages.footer-contact') }}
                         </span>
 
                         <span>
                             <i class="fa-solid fa-envelope"></i>
-                            {{ __(messages.footer-number) }}
+                            {{ __('messages.footer-number') }}
 
                         </span>
                     </div>

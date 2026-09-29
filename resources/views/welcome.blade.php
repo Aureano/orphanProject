@@ -770,17 +770,18 @@
                     <div class="footer-links">
                         <span>
                             <i class="fa-solid fa-location-dot"></i>
-                            San Simón Zahuatlán,Sud-ouest Mexique
+                            {{ __(messages.footer-location) }}
                         </span>
 
                         <span>
                             <i class="fa-solid fa-phone"></i>
-                            +229 XX XX XX XX
+                            {{ __(messages.footer-contact) }}
                         </span>
 
                         <span>
                             <i class="fa-solid fa-envelope"></i>
-                            contact@espoirenfance.org
+                            {{ __(messages.footer-number) }}
+
                         </span>
                     </div>
                 </div>

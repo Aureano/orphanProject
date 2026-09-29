@@ -105,6 +105,9 @@ return [
     'donate_now_2' => 'I donate now',
 
     // Footer
+    'footer-location' => 'San Simón Zahuatlán, Southwest Mexico',
+    'footer-contact' => '+52 55 1234 5678',
+    'footer-number' => 'Orphanmexico858@gmail.com',
     'navigation' => 'Navigation',
     'about' => 'About us',
     'our_action' => 'Our action',

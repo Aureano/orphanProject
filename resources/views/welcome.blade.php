@@ -770,7 +770,7 @@
                     <div class="footer-links">
                         <span>
                             <i class="fa-solid fa-location-dot"></i>
-                            Abomey-Calavi, Bénin
+                            San Simón Zahuatlán,Sud-ouest Mexique
                         </span>
 
                         <span>

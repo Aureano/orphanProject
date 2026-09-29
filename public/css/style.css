@@ -1592,7 +1592,7 @@
 .auth-page {
     margin: 0;
     min-height: 100vh;
-    background: #f8f9fa;
+    /* background: #f8f9fa; */
 }
 
 .auth-container {
@@ -1606,6 +1606,7 @@
 .auth-welcome {
     padding: 50px;
     display: flex;
+    border-radius:0 40px 40px 0;
     flex-direction: column;
     justify-content: space-between;
     background: #e85d75;
@@ -2086,7 +2087,7 @@
     bottom: 75px;
 
     width: 360px;
-    height: 450px;
+    height: 440px;
 
     background: white;
 

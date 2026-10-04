@@ -978,7 +978,26 @@
    NAVBAR RESPONSIVE - PAGE DON
 ========================================================= */
 
+@media (max-width: 600px) {
 
+    .don-container {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .don-methods {
+        width: 100%;
+    }
+
+    .don-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
 
 
 

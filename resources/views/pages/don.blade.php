@@ -980,23 +980,20 @@
 
 @media (max-width: 600px) {
 
-    .don-container {
-        width: 100%;
-        max-width: none;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0 15px;
+    main {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .donation-page {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
         box-sizing: border-box;
     }
 
-    .don-methods {
-        width: 100%;
-    }
-
-    .don-card {
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
 
 

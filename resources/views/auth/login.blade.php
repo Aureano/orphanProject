@@ -1,6 +1,14 @@
 <x-guest-layout>
 
 
+    @if (request()->has('session_expired'))
+    <div class="session-expired-message">
+        <i class="fa-solid fa-clock"></i>
+        Votre session a expiré en raison d'une période d'inactivité.
+        Veuillez vous reconnecter pour continuer.
+    </div>
+@endif
+
 <div class="auth-form">
 
     <div class="auth-form-header">

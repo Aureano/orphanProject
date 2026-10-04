@@ -1603,6 +1603,23 @@
 
 /* ================= PARTIE GAUCHE ================= */
 
+.session-expired-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    background: #fff3cd;
+    border: 1px solid #ffe69c;
+    color: #664d03;
+
+    font-size: 0.9rem;
+}
+
 .auth-welcome {
     padding: 50px;
     display: flex;
